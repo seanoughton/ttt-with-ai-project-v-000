@@ -19,9 +19,7 @@ module Players
       end
 
       def defense
-        #part of this strategy needs to involve defense moves as well
         #need a blocking method that takes into account where each player has played
-        #you would have to know which player is "X" and which is "O", who is player 1
         player_token = self.token
 
       end
