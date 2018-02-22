@@ -52,6 +52,7 @@ module Players
       array_of_empty_cells[0]
 =end
       empty_cells[0]
+      take_corners_strategy
 
     end #move end
   end #class end
