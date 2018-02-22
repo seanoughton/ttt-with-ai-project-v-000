@@ -63,7 +63,6 @@ module Players
 
       end
 
-      #you go on offense until it is necessary to make a defensive move
 
       def take_corners_strategy #take these positions: 1,3,9 : 3,7,9: 1,7,9: 1,3,7
 
