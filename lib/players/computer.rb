@@ -22,6 +22,8 @@ module Players
         #need a blocking method that takes into account where each player has played
         if self.token == "X"
           opponent = "O"
+        else
+          opponent = "X"
         end
 
         #assuming computer is "X" : check to see where the O's are on the board
