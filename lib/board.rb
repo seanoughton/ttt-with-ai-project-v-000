@@ -31,9 +31,7 @@ class Board
   def token
   end
 
-  def full?
-    #when entirely occupied with "X" and "O"s
-    #if @cells includes an empty space " ", then it is not full
+  def full?#return true if every cell has an X or O and no " "
     true if !(self.cells.include?(" "))
 
   end
