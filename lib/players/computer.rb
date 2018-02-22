@@ -30,6 +30,13 @@ module Players
       end
 
       def opponent_cells
+        array_of_opponent_cells = []
+        @the_board.cells.each_with_index do |element,index|
+          if element == "O"
+            array_of_opponent_cells << (index+1).to_s
+          end
+        end
+        array_of_opponent_cells
       end
 
       def defense
