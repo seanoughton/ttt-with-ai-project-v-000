@@ -22,6 +22,9 @@ module Players
       end
       array_of_empty_cells[0].to_s
 
+      #take the corners strategy
+      #take these positions: 1,3,9 : 3,7,9: 1,7,9: 1,3,7
+
     end
   end
 
