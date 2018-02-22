@@ -32,7 +32,7 @@ module Players
       def opponent_cells
         array_of_opponent_cells = []
         @the_board.cells.each_with_index do |element,index|
-          if element == "O"
+          if element == opponent
             array_of_opponent_cells << (index+1).to_s
           end
         end
