@@ -1,7 +1,6 @@
 module Players
   class Computer < Player
-    def move(board)
-      #accepts a board and returns the move the computer wants to make in the form of a 1-9 string.
+    def move(board)#makes moves for the computer
       @the_board = board
 
       def empty_cells #returns an array with the position values of the empty cells
@@ -34,7 +33,7 @@ module Players
         array_of_opponent_cells
       end
 
-      def test_the_array(array)
+      def test_against_winning_combos(array)#tests the board against winning combos to see if a block move is needed
         empty_cell = " "
         test_array = array.collect do |element|
           @the_board.cells[element]
@@ -54,8 +53,8 @@ module Players
         win_combos = [[0,1,2],[3,4,5],[6,7,8],[0,3,6],[1,4,7],[2,5,8],[0,4,8],[6,4,2]]
 
         win_combos.each do |array|
-          if test_the_array(array) != " "
-            block_cell = test_the_array(array)
+          if test_against_winning_combos(array) != " "
+            block_cell = test_against_winning_combos(array)
           end
         end
           block_cell
