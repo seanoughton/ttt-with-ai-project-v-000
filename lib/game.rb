@@ -62,15 +62,7 @@ class Game
     true if self.board.full? && !(self.won?)
   end
 
-  def over?
-    #returns true for a draw
-=begin
-    if self.board.cells.include?(" ") && (won? != true) #&& (draw? != true)# and game is not won
-      false
-    else
-      true
-    end
-=end
+  def over? #returns true if the game is over
     if (self.board.full? || self.won? || self.draw?)
       true
     else
