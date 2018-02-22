@@ -20,7 +20,6 @@ class Game
     @board = board
   end
 
-  #These methods relate to the state of the game
   def current_player
     #returns the current player, the player who should make the next move
     #logic: looks at the X's and O's on the board
