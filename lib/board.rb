@@ -24,14 +24,13 @@ class Board
   end
 
   def update(position,player) #updates the board when a player makes a move
-    #When you update the appropriate index in @cells, you will set it equal to the token of the player 
+    #When you update the appropriate index in @cells, you will set it equal to the token of the player
     self.cells[position.to_i - 1] = player.token
   end
 
   def token
   end
 
-  #a board can return values based on its state such as
   def full?
     #when entirely occupied with "X" and "O"s
     #if @cells includes an empty space " ", then it is not full
