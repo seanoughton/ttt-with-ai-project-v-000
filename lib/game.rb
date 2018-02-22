@@ -133,8 +133,6 @@ class Game
       #you repeat
       self.turn
     end
-
-
   end
 
 end
