@@ -26,15 +26,19 @@ module Players
       #take the corners strategy
       #take these positions: 1,3,9 : 3,7,9: 1,7,9: 1,3,7
       def take_corners_strategy
-        #get the empty positions: call method empty_cells
         set_1 = ["1","3","9"]
         empty_cells
-        #if 1,3,9 is in the empty_cells then play each one of these numbers successively
-        #check to see if empty_cells contains any of these numbers
-        #whichever of these numbers is not in empty_cells, play the first one
-        #find the first of these numbers that is not in empty_cells and returnt that element
-
-
+        #find the first of these numbers that is not in empty_cells and return that element
+        next_move = empty_cells.select do |element|
+          element == "1" || element == "3" || element == "9"
+        end
+        if next_move == [] && @cells[4] == " "
+          #play the middle if the middle is empty_cells
+          next_move = "5"
+        else
+          #play the first empty cells
+          next_move = empty_cells[0]
+        end
       end
 
 
