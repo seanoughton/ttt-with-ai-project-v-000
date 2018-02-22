@@ -28,7 +28,8 @@ module Players
         if next_move == [] && @the_board.cells[4] == " "
           #if the strategy cells are full and the middle is empty play the middle
           next_move = "5"
-        elsif #if next move is got stuff in the array, play the first element of the array
+        elsif next_move.size > 0
+          #if next move is got stuff in the array, play the first element of the array
           next_move[0]
         else
           #play the first empty cells
