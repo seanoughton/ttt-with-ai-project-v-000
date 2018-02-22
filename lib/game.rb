@@ -108,11 +108,7 @@ class Game
     end
   end
 
-  def play
-    #asks for players input on a turn of the game
-    #checks if the game is over after every turn
-    #plays the first few turns of the game
-    #congratulates the winner X
+  def play #checks if the game is over, calls #display, calls#turn, congratulates winner
     until self.over?
       self.board.display
       self.turn
