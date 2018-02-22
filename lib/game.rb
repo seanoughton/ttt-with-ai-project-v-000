@@ -58,16 +58,8 @@ class Game
   end
 
 
-  def draw?
-    #true if self.over? && !(self.won?)
+  def draw?#returns true if the game is a draw
     true if self.board.full? && !(self.won?)
-=begin
-    if self.over? && !(self.won?)
-      true
-    else
-      false
-    end
-=end
   end
 
   def over?
