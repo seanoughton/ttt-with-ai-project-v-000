@@ -16,6 +16,7 @@ module Players
       #take the corners strategy
       #take these positions: 1,3,9 : 3,7,9: 1,7,9: 1,3,7
       def take_corners_strategy
+        #get the empty positions: call method empty_cells
       end
 
 
