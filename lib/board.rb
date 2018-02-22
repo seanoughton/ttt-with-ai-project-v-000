@@ -1,6 +1,4 @@
 class Board
-  #The Board class represents the data and logic of a Tic-tac-toe game board.
-
   attr_accessor :cells
 
   def initialize
