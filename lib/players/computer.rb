@@ -31,6 +31,7 @@ module Players
         empty_cells
         #if 1,3,9 is in the empty_cells then play each one of these numbers successively
         #check to see if empty_cells contains any of these numbers
+        #whichever of these numbers is not in empty_cells, play the first one
 
 
       end
