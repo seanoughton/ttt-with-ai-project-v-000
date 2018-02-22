@@ -6,9 +6,6 @@ class Board
     self.reset!
   end
 
-  #don't think I need this line of code, because the array is declared in the initialize method through reset
-  #@cells = [] #that stores the data of the state of the board in an array.  The assumption is that it is an instance method that stores the state of an individual board
-
   def reset!
     #can reset the state of the cells to what a board should look like at the start of a game, an array with 9 " " elements.
     @cells = [" ", " ", " ", " ", " ", " ", " ", " ", " "]
