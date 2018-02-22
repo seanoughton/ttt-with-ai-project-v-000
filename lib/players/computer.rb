@@ -26,8 +26,7 @@ module Players
         end
         #return the next move
         if next_move == [] && @the_board.cells[4] == " "
-          #play the middle if the middle is empty_cells
-          next_move = "5"
+          #if the strategy cells are full and the middle is empty play the middle
         elsif
           next_move[0]
         else
