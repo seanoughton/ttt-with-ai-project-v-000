@@ -10,7 +10,7 @@ module Players
 
       def empty_cells
         array_of_empty_cells = []
-        self.board.cells.each_with_index do |element,index|
+        @board.cells.each_with_index do |element,index|
           if element == " "
             array_of_empty_cells << (index+1).to_s
           end
