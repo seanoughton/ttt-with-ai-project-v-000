@@ -21,7 +21,7 @@ module Players
       def defense
         #need a blocking method that takes into account where each player has played
         if self.token == "X"
-          opponent = O
+          opponent = "O"
         end
         #assuming computer is "X" : check to see where the O's are on the board
         #if the O's are lined up in such a way that the next move will be a win
