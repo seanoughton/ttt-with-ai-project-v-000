@@ -24,10 +24,7 @@ class Board
   end
 
   def update(position,player) #updates the board when a player makes a move
-    #When you update the appropriate index in @cells, you will set it equal to the token of the player object by calling the #token method on the player.
-    #get the appropriate position in the array from the postion input
-    #access the array position
-    #assign the player.token to that position
+    #When you update the appropriate index in @cells, you will set it equal to the token of the player 
     self.cells[position.to_i - 1] = player.token
   end
 
