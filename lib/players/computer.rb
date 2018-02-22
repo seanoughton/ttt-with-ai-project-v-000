@@ -57,7 +57,7 @@ module Players
       def block#provides defenesive/blocking moves
         #need a blocking method that takes into account where each player has played
         opponent_cells #where the opponent is on the board
-        #if any of the WIN_COMBINATIONS array combo's have two of the opponent,
+        #if any of the winning_combo array combo's have two of the opponent,
           #check the board using each of the winning combo's
           #check each sub array for two of the opponent
 
