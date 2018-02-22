@@ -6,6 +6,9 @@
 module Players
   class Computer < Player
     def move(board)
+
+      puts "the token for the computer is "
+      puts self.token
       #accepts a board and returns the move the computer wants to make in the form of a 1-9 string.
       @the_board = board
       def empty_cells
@@ -39,8 +42,6 @@ module Players
           #if you can't play the strategy moves or the middle, play the first empty cells
           next_move = empty_cells[0]
         end
-        puts "the token for the computer is "
-        puts self.token
       end
 
       take_corners_strategy
