@@ -12,12 +12,6 @@ module Players
       #Think about the levels of intelligence you can build into this method. Start with the simplest level of intelligence, and get more and more complicated. Each step of the way you should have a working computer player though.
       #Remember, Tic-tac-toe when played perfectly is unwinnable. You should strive to build computer logic that when the computer plays, the game is unwinnable. You can hardcode your logic, things like "On turn 1 always try to go in the middle if you can" and if not "try to go in a corner" or any logic tree you can think of - there is an algorithm called Min/Max, but it's going to be hard to implement given our current implementation of a Game, so we recommend building something that's a more colloquial or condition-based algorithm.
 
-      #the logic is: find an empty cell to play in starting with 1 and going to 9
-      #this method gets the board as an argument, so you have access to the board
-      #iterate through the board to find empty cells
-      #you want a list of the empty array positions(converted to the user input of 1-9)
-      #then you choose one of those, and return it
-      #an empty array position = " "
 
       #pick the first empty cells
       array_of_empty_cells = []
