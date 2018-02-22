@@ -36,7 +36,7 @@ module Players
       take_corners_strategy
 
 
-      #pick the first empty cells
+      #strategy: pick the first empty cells
 =begin
       array_of_empty_cells = []
       board.cells.each_with_index do |element,index|
