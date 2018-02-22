@@ -19,10 +19,7 @@ class Board
     puts " "
   end
 
-  def position(input)
-    #takes in the user's input in the form of 1-9 strings like "2" or "9" and looks up the value of the cells at the correct index from the array's perspective. All other methods will take input in the user's perspective of 1-9 strings and use #position to look up the value according to the cells' array index.
-    #convert the input to an integer and subtract one from the integer to get the array position
-    #and return the value at the array position
+  def position(input) #return the value at the array position
     self.cells[input.to_i - 1 ]
   end
 
