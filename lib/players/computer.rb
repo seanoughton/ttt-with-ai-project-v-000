@@ -7,9 +7,10 @@ module Players
   class Computer < Player
     def move(board)
       #accepts a board and returns the move the computer wants to make in the form of a 1-9 string.
+
       def empty_cells
         array_of_empty_cells = []
-        board.cells.each_with_index do |element,index|
+        self.board.cells.each_with_index do |element,index|
           if element == " "
             array_of_empty_cells << (index+1).to_s
           end
