@@ -1,6 +1,4 @@
 class Game
-  #A game has one Board through its board property.
-  #A game has two Players stored in a player_1 and player_2 property.
   attr_accessor :board, :player_1, :player_2
   WIN_COMBINATIONS = [
   #horizontal combinations
