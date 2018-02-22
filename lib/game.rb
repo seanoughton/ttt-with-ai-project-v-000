@@ -1,5 +1,3 @@
-#The Game class is the main model of the application and represents a singular instance of a Tic-tac-toe session.
-
 class Game
   #A game has one Board through its board property.
   #A game has two Players stored in a player_1 and player_2 property.
