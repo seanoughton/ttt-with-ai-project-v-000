@@ -42,8 +42,7 @@ module Players
       def defense#provides defenesive/blocking moves
         #need a blocking method that takes into account where each player has played
         opponent_cells #where the opponent is on the board
-        #compare where the opponent_cells are to the winning combinations
-        #if the O's are lined up in such a way that the next move will be a win
+        #if opponent_cells are close to a winning combinations
         #the move to block, this takes precedence over the offensive strategy
       end
 
