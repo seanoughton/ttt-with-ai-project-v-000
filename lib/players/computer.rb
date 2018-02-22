@@ -29,7 +29,7 @@ module Players
           #play the middle if the middle is empty_cells
           next_move = "5"
         elsif
-          next_move
+          next_move[0]
         else
           #play the first empty cells
           next_move = empty_cells[0]
