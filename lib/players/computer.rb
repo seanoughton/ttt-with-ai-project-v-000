@@ -34,19 +34,7 @@ module Players
         array_of_opponent_cells
       end
 
-      def block#provides defenesive/blocking moves
-        #need a blocking method that takes into account where each player has played
-        opponent_cells #where the opponent is on the board
-        #if any of the winning_combo array combo's have two of the opponent,
-          #check the board using each of the winning combo's
-          #check each sub array for two of the opponent
-        winning_combo.each do |array|
-          position_array = [board.cells[array[0]],board.cells[array[1]],board.cells[array[2]]]
-          #check if the position_array contains two of the opponent
-          position_array.count(opponent)
-        end
 
-      end
 
 
       def take_corners_strategy #take these positions: 1,3,9 : 3,7,9: 1,7,9: 1,3,7
