@@ -9,6 +9,21 @@ module Players
       #accepts a board and returns the move the computer wants to make in the form of a 1-9 string.
       @the_board = board
 
+      WIN_COMBINATIONS = [
+      #horizontal combinations
+      [0,1,2],
+      [3,4,5],
+      [6,7,8],
+      #vertical combinations
+      [0,3,6],
+      [1,4,7],
+      [2,5,8],
+      #diagonal combinations
+      [0,4,8],
+      [6,4,2]
+      ]
+
+
       def empty_cells #returns an array with the position values of the empty cells
         array_of_empty_cells = []
         @the_board.cells.each_with_index do |element,index|
