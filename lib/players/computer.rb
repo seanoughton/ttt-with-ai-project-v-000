@@ -32,7 +32,7 @@ module Players
           #if next move is got stuff in the array, play the first element of the array
           next_move[0]
         else
-          #play the first empty cells
+          #if you can't play the strategy moves or the middle, play the first empty cells
           next_move = empty_cells[0]
         end
 
