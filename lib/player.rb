@@ -1,8 +1,6 @@
-class Player
+class Player #creates a clas for both human and computer to inherit from
   attr_reader :token
-
-  def initialize(token) #this might need to be an optional argument
-    #this might not be correct
+  def initialize(token)
     @token = token
   end
 end
