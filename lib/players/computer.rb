@@ -39,7 +39,7 @@ module Players
         array_of_opponent_cells
       end
 
-      def defense
+      def defense#provides defenesive/blocking moves
         #need a blocking method that takes into account where each player has played
         opponent
         #check to see where the opponent's moves are on the board
