@@ -61,7 +61,32 @@ module Players
           block_cell
       end
 
+      def take_corners_strategy #take these positions: 1,3,9 : 3,7,9: 1,7,9: 1,3,7
 
+        if block == " "
+          empty_cells
+          #find the first of these numbers that is not in empty_cells and return that element
+          next_move = empty_cells.select do |element|
+            element == "1" || element == "3"|| element == "7" || element == "9"
+          end
+          #return the next move
+          if next_move == [] && @the_board.cells[4] == " "
+            #if the strategy cells are full and the middle is empty play the middle
+            next_move = "5"
+          elsif next_move.size > 0
+            #if next move is got stuff in the array, play the first element of the array
+            next_move[0]
+          else
+            #if you can't play the strategy moves or the middle, play the first empty cells
+            next_move = empty_cells[0]
+          end
+        else
+          next_move = block
+        end
+
+      end
+
+=begin
       def take_corners_strategy #take these positions: 1,3,9 : 3,7,9: 1,7,9: 1,3,7
 
         empty_cells
@@ -81,7 +106,7 @@ module Players
           next_move = empty_cells[0]
         end
       end
-
+=end
       take_corners_strategy
 
     end #move end
