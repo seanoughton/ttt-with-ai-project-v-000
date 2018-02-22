@@ -22,7 +22,7 @@ module Players
         #need a blocking method that takes into account where each player has played
         if self.token == "X"
           opponent = "O"
-        else
+        elsif self.token == "O"
           opponent = "X"
         end
 
