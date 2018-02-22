@@ -114,14 +114,11 @@ class Game
       self.turn
       self.board.display
     end
-
     if self.winner
       puts "Congratulations #{self.winner}!"
     elsif self.draw?
       puts "Cat's Game!"
     end
-
-
   end
 
   def turn
