@@ -13,6 +13,10 @@ module Players
       #Remember, Tic-tac-toe when played perfectly is unwinnable. You should strive to build computer logic that when the computer plays, the game is unwinnable. You can hardcode your logic, things like "On turn 1 always try to go in the middle if you can" and if not "try to go in a corner" or any logic tree you can think of - there is an algorithm called Min/Max, but it's going to be hard to implement given our current implementation of a Game, so we recommend building something that's a more colloquial or condition-based algorithm.
 
 
+      #take the corners strategy
+      #take these positions: 1,3,9 : 3,7,9: 1,7,9: 1,3,7
+
+
       #pick the first empty cells
       array_of_empty_cells = []
       board.cells.each_with_index do |element,index|
@@ -22,9 +26,8 @@ module Players
       end
       array_of_empty_cells[0].to_s
 
-      #take the corners strategy
-      #take these positions: 1,3,9 : 3,7,9: 1,7,9: 1,3,7
-      
+
+
 
     end
   end
