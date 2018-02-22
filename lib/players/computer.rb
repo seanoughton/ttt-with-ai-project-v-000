@@ -17,6 +17,7 @@ module Players
       #take these positions: 1,3,9 : 3,7,9: 1,7,9: 1,3,7
       def take_corners_strategy
         #get the empty positions: call method empty_cells
+        #if 1,3,9 is in the empty_cells then play the first one
       end
 
 
