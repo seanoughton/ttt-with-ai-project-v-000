@@ -39,7 +39,8 @@ module Players
           #if you can't play the strategy moves or the middle, play the first empty cells
           next_move = empty_cells[0]
         end
-
+        puts "the token for the computer is "
+        puts self.token
       end
 
       take_corners_strategy
