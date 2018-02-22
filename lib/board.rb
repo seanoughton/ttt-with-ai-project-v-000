@@ -36,8 +36,7 @@ class Board
 
   end
 
-  def turn_count
-    #based on how many positions in the cells array are filled.
+  def turn_count#return how many turns have occurred, based on how many cells have X or O
     full_positions = self.cells.find_all do |element|
       element != " "
     end
