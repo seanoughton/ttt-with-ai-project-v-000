@@ -19,13 +19,15 @@ module Players
       end
 
       def defense
-        player_token = self.token
-      end
-
-      def take_corners_strategy #take these positions: 1,3,9 : 3,7,9: 1,7,9: 1,3,7
         #part of this strategy needs to involve defense moves as well
         #need a blocking method that takes into account where each player has played
         #you would have to know which player is "X" and which is "O", who is player 1
+        player_token = self.token
+
+      end
+
+      def take_corners_strategy #take these positions: 1,3,9 : 3,7,9: 1,7,9: 1,3,7
+
 
         empty_cells
         #find the first of these numbers that is not in empty_cells and return that element
