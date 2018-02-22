@@ -26,7 +26,7 @@ module Players
           opponent = "X"
         end
         #check to see where the opponent's moves are on the board
-        #iterate over the board and return the array positions
+        #iterate over the board and return the array positions that are occupied by the opponent
         @the_board
         #if the O's are lined up in such a way that the next move will be a win
         #the move to block, this takes precedence over the offensive strategy
