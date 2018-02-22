@@ -51,9 +51,7 @@ class Board
     end
   end
 
-  def valid_move?(input)
-    #takes a string as an input, converts that string to an integer and checks to see if it is a valid move
-    #will ensure that moves are between 1-9 and not taken.
+  def valid_move?(input)#returns true if the move is valid (between 1-9 and not take)
     move = input.to_i
     if (1..9).include?(move) && taken?(input) == false
       true
