@@ -121,8 +121,7 @@ class Game
     end
   end
 
-  def turn
-    #makes valid moves
+  def turn #makes valid moves
     player = current_player
     the_move = player.move(self.board)
     if self.board.valid_move?(the_move) == true
