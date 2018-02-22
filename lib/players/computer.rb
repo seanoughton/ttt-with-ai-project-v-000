@@ -23,7 +23,7 @@ module Players
         if self.token == "X"
           opponent = "O"
         end
-        puts opponent
+      
         #assuming computer is "X" : check to see where the O's are on the board
         #if the O's are lined up in such a way that the next move will be a win
         #the move to block, this takes precedence over the offensive strategy
