@@ -66,8 +66,6 @@ module Players
           position_array.count(opponent)
         end
 
-        #then make a move in the empty cell
-        #else use offensive strategy
       end
 
       #you go on offense until it is necessary to make a defensive move
