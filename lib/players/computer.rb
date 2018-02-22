@@ -41,7 +41,7 @@ module Players
 
 
       #strategy: pick the first empty cells
-
+=begin
       array_of_empty_cells = []
       #board.cells.each_with_index do |element,index|
       @the_board.cells.each_with_index do |element,index|
@@ -50,6 +50,7 @@ module Players
         end
       end
       array_of_empty_cells[0]
+=end
       empty_cells[0]
 
     end #move end
