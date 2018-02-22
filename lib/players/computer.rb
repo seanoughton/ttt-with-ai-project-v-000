@@ -9,16 +9,6 @@ module Players
       #accepts a board and returns the move the computer wants to make in the form of a 1-9 string.
       @the_board = board
 
-
-      def opponent
-        if self.token == "X"
-          opponent = "O"
-        elsif self.token == "O"
-          opponent = "X"
-        end
-        opponent
-      end
-
       def empty_cells
         array_of_empty_cells = []
         @the_board.cells.each_with_index do |element,index|
@@ -28,6 +18,16 @@ module Players
         end
         array_of_empty_cells
       end
+
+      def opponent #returns who the opponent is as a string
+        if self.token == "X"
+          opponent = "O"
+        elsif self.token == "O"
+          opponent = "X"
+        end
+        opponent
+      end
+
 
       def opponent_cells
         array_of_opponent_cells = []
