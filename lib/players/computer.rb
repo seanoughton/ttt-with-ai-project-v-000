@@ -60,8 +60,8 @@ module Players
         #if any of the winning_combo array combo's have two of the opponent,
           #check the board using each of the winning combo's
           #check each sub array for two of the opponent
-        winning_combo.each do |combination|
-          
+        winning_combo.each do |array|
+          position_array = [board.cells[array[0]],board.cells[array[1]],board.cells[array[2]]]
         end
 
         #then make a move in the empty cell
