@@ -24,6 +24,7 @@ module Players
         next_move = empty_cells.select do |element|
           element == "3" || element == "7" || element == "9"
         end
+        #return the next move
         if next_move == [] && @the_board.cells[4] == " "
           #play the middle if the middle is empty_cells
           next_move = "5"
