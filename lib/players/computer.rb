@@ -22,9 +22,8 @@ module Players
         set_1 = ["1","3","9"]
         empty_cells
         #find the first of these numbers that is not in empty_cells and return that element
-
         next_move = empty_cells.select do |element|
-          element == "1" || element == "3" || element == "9"
+          element == "1" || element == "3" || element == "7"
         end
         if next_move == [] && @the_board.cells[4] == " "
           #play the middle if the middle is empty_cells
