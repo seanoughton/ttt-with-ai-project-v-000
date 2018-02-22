@@ -28,6 +28,8 @@ module Players
         if next_move == [] && @the_board.cells[4] == " "
           #play the middle if the middle is empty_cells
           next_move = "5"
+        elsif
+          next_move
         else
           #play the first empty cells
           next_move = empty_cells[0]
