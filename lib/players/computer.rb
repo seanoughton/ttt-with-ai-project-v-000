@@ -16,7 +16,7 @@ module Players
         end
         array_of_empty_cells
       end
-      
+
       def take_corners_strategy #take these positions: 1,3,9 : 3,7,9: 1,7,9: 1,3,7
         set_1 = ["1","3","9"]
         empty_cells
@@ -49,7 +49,7 @@ module Players
 
 
 
-    end
-  end
+    end #move end
+  end #class end
 
-end
+end #module end
