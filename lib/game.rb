@@ -26,11 +26,9 @@ class Game
 
   #These methods relate to the state of the game
   def current_player
-    #for an instance of the game, call this method and it will tell you who the current player is
-    #looks at the X's and O's on the board to see who's turn it is
+    #returns the current player, the player who should make the next move
+    #logic: looks at the X's and O's on the board
     #returns whoever the current_player should be, the player instance who's next turn it is
-    #game.current_player => either "X" or "O"
-    #could be done with a turn_count method, then use modulus on that to see if even?
     num_of_x = self.board.cells.find_all do |position|
       position == "X"
     end
