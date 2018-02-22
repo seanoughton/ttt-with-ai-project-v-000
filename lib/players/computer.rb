@@ -16,10 +16,8 @@ module Players
         end
         array_of_empty_cells
       end
-
-      #take the corners strategy
-      #take these positions: 1,3,9 : 3,7,9: 1,7,9: 1,3,7
-      def take_corners_strategy
+      
+      def take_corners_strategy #take these positions: 1,3,9 : 3,7,9: 1,7,9: 1,3,7
         set_1 = ["1","3","9"]
         empty_cells
         #find the first of these numbers that is not in empty_cells and return that element
