@@ -18,12 +18,6 @@ class Game
   [6,4,2]
   ]
 
-  #when the game is started, you need a way to tell the game that the players are human or computer
-  #if the player is a computer then,
-  #player_1=Players::Computer.new("X"),
-  #player_2=Players::Computer.new("O")
-  #game.new(player_1=Players::Computer.new("X"),player_2=Players::Computer.new("O"))
-
   def initialize(player_1=Players::Human.new("X"),player_2=Players::Human.new("O"),board=Board.new)
     @player_1 = player_1
     @player_2 = player_2
