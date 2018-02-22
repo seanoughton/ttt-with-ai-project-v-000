@@ -82,13 +82,6 @@ class Game
     end
   end
 
-  #The other methods relate to managing a game
-
-  #when the game is started, you need a way to tell the game that the players are human or computer
-  #if the player is a computer then,
-  #player_1=Players::Computer.new("X"),
-  #player_2=Players::Computer.new("O")
-  #game.new(player_1=Players::Computer.new("X"),player_2=Players::Computer.new("O"))
   def start
 
     puts "What kind of game would you like to play? 0,1, or 2 player game."
