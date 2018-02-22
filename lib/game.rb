@@ -127,8 +127,7 @@ class Game
     if self.board.valid_move?(the_move) == true
       #if it is a valid move, then update the board with the move
       self.board.update(the_move,player)
-    else
-      #you repeat
+    else #if it's not a valid move, you keep asking the player to make a move
       self.turn
     end
   end
