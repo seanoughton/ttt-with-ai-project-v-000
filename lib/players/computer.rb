@@ -32,7 +32,7 @@ module Players
           next_move = "5"
         else
           #play the first empty cells
-          #next_move = empty_cells[0]
+          next_move = empty_cells[0]
         end
 
       end
