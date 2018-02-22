@@ -2,7 +2,7 @@ class Board
   attr_accessor :cells
 
   def initialize
-    #When a board is initialized, it should start with cells for a new game of Tic-tac-toe. You can and should use #reset!
+    #creates an empty board
     self.reset!
   end
 
