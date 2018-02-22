@@ -25,9 +25,7 @@ module Players
         elsif self.token == "O"
           opponent = "X"
         end
-        
-
-        #assuming computer is "X" : check to see where the O's are on the board
+        #check to see where the opponent's moves are on the board
         #if the O's are lined up in such a way that the next move will be a win
         #the move to block, this takes precedence over the offensive strategy
       end
