@@ -20,7 +20,7 @@ module Players
             array_of_empty_cells << index+1
           end
         end
-        array_of_empty_cells[0].to_s
+        array_of_empty_cells
       end
 
       #take the corners strategy
