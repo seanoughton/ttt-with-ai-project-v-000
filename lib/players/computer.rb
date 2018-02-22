@@ -34,7 +34,20 @@ module Players
         array_of_opponent_cells
       end
 
-
+      def test_the_array(array)
+        empty_cell = " "
+        test_array = array.collect do |element|
+          @cells[element]
+        end
+        if test_array.count(opponent) > 1 
+          array.each do |element|
+            if @cells[element] == " "
+              empty_cell = (element+1).to_s
+            end
+          end
+        end
+        empty_cell
+      end
 
 
       def take_corners_strategy #take these positions: 1,3,9 : 3,7,9: 1,7,9: 1,3,7
