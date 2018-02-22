@@ -29,6 +29,9 @@ module Players
         array_of_empty_cells
       end
 
+      def opponent_cells
+      end
+
       def defense
         #need a blocking method that takes into account where each player has played
         opponent
