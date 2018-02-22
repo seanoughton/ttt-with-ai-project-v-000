@@ -1,8 +1,3 @@
-#Define a class Players::Computer that represents a computer player of Tic-tac-toe.
-#not sure this is set up correctly
-#question: can you define a module (Players), in two separate files
-#because it is also defined in the human.rb files
-#will this throw an error
 module Players
   class Computer < Player
     def move(board)
