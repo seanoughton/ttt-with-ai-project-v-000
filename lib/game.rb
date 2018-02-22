@@ -125,9 +125,7 @@ class Game
     player = current_player
     the_move = player.move(self.board)
     if self.board.valid_move?(the_move) == true
-      #the_move = player.move(self.board)
-      #you add the move to the board
-      #update(position,player)
+      #if it is a valid move, then update the board with the move
       self.board.update(the_move,player)
     else
       #you repeat
