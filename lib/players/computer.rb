@@ -60,6 +60,8 @@ module Players
         #if any of the winning_combo array combo's have two of the opponent,
           #check the board using each of the winning combo's
           #check each sub array for two of the opponent
+        winning_combo.each do |combination|
+        end
 
         #then make a move in the empty cell
         #else use offensive strategy
