@@ -43,7 +43,7 @@ module Players
         #need a blocking method that takes into account where each player has played
         opponent_cells #where the opponent is on the board
         #if opponent_cells are close to a winning combinations
-        #the move to block, this takes precedence over the offensive strategy
+        #then move to block, this takes precedence over the offensive strategy
       end
 
       #you go on offense until it is necessary to make a defensive move
