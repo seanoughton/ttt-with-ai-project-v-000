@@ -20,6 +20,7 @@ module Players
       end
 
       def defense
+        player_token = self.token
       end
 
       def take_corners_strategy #take these positions: 1,3,9 : 3,7,9: 1,7,9: 1,3,7
