@@ -23,10 +23,7 @@ class Board
     self.cells[input.to_i - 1 ]
   end
 
-  def update(position,player)
-    #represents updating the board when a player makes a move
-    #This method will take two arguments, the first will be the position the user wants to occupy in the form of 1-9 strings that you will need to convert to the board cells' array index, along with the player object making the move
-    #player is an object
+  def update(position,player) #updates the board when a player makes a move
     #When you update the appropriate index in @cells, you will set it equal to the token of the player object by calling the #token method on the player.
     #get the appropriate position in the array from the postion input
     #access the array position
