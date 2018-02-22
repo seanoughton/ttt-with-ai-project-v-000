@@ -9,7 +9,7 @@ module Players
       #accepts a board and returns the move the computer wants to make in the form of a 1-9 string.
       @the_board = board
 
-      WIN_COMBO = ""
+      winning_combo = ""
 
 
       def empty_cells #returns an array with the position values of the empty cells
