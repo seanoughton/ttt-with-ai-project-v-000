@@ -9,7 +9,7 @@ module Players
       #accepts a board and returns the move the computer wants to make in the form of a 1-9 string.
       @the_board = board
 
-      WIN_COMBINATIONS = [
+      WIN_COMBINATIONS =[
       #horizontal combinations
       [0,1,2],
       [3,4,5],
@@ -54,11 +54,15 @@ module Players
         array_of_opponent_cells
       end
 
-      def defense#provides defenesive/blocking moves
+      def block#provides defenesive/blocking moves
         #need a blocking method that takes into account where each player has played
         opponent_cells #where the opponent is on the board
-        #if opponent_cells are close to a winning combinations
-        #then move to block, this takes precedence over the offensive strategy
+        #if any of the WIN_COMBINATIONS array combo's have two of the opponent,
+          #check the board using each of the winning combo's
+          #check each sub array for two of the opponent
+
+        #then make a move in the empty cell
+        #else use offensive strategy
       end
 
       #you go on offense until it is necessary to make a defensive move
