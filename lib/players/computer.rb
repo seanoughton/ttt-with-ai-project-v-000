@@ -21,8 +21,12 @@ module Players
       def defense
         #need a blocking method that takes into account where each player has played
         player_token = self.token
-
+        #assuming computer is "X" : check to see where the O's are on the board
+        #if the O's are lined up in such a way that the next move will be a win
+        #the move to block, this takes precedence over the offensive strategy
       end
+
+      #you go on offense until it is necessary to make a defensive move
 
       def take_corners_strategy #take these positions: 1,3,9 : 3,7,9: 1,7,9: 1,3,7
 
