@@ -29,7 +29,7 @@ module Players
       end
 
 
-      def opponent_cells
+      def opponent_cells #returns an array with the position values of where the opponent has played
         array_of_opponent_cells = []
         @the_board.cells.each_with_index do |element,index|
           if element == opponent
