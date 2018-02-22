@@ -17,7 +17,7 @@ module Players
         array_of_empty_cells = []
         board.cells.each_with_index do |element,index|
           if element == " "
-            array_of_empty_cells << index+1
+            array_of_empty_cells << (index+1).to_s
           end
         end
         array_of_empty_cells
