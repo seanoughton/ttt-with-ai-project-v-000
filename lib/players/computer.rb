@@ -11,6 +11,12 @@ module Players
 
 
       def opponent
+        if self.token == "X"
+          opponent = "O"
+        elsif self.token == "O"
+          opponent = "X"
+        end
+        opponent
       end
 
       def empty_cells
@@ -25,11 +31,7 @@ module Players
 
       def defense
         #need a blocking method that takes into account where each player has played
-        if self.token == "X"
-          opponent = "O"
-        elsif self.token == "O"
-          opponent = "X"
-        end
+
         #check to see where the opponent's moves are on the board
         #iterate over the board and return the array positions that are occupied by the opponent
         @the_board.cells
