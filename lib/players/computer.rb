@@ -37,7 +37,7 @@ module Players
 
       end
 
-      #take_corners_strategy
+      take_corners_strategy
 
 
       #strategy: pick the first empty cells
