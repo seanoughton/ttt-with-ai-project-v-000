@@ -72,7 +72,7 @@ class Game
   end
 
 
-  def winner #returns X when X won
+  def winner #returns whichever player is the winner
     if won?
       if board.cells[won?[0]] == "X"
         "X"
