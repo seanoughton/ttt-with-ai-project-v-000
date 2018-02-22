@@ -21,9 +21,9 @@ module Players
 
       def take_corners_strategy #take these positions: 1,3,9 : 3,7,9: 1,7,9: 1,3,7
         set_1 = ["1","3","9"]
-        #empty_cells
+        empty_cells
         #find the first of these numbers that is not in empty_cells and return that element
-=begin
+
         next_move = empty_cells.select do |element|
           element == "1" || element == "3" || element == "9"
         end
@@ -34,7 +34,7 @@ module Players
           #play the first empty cells
           next_move = empty_cells[0]
         end
-=end
+
       end
 
       take_corners_strategy
