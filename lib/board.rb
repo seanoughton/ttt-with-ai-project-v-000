@@ -6,8 +6,7 @@ class Board
     self.reset!
   end
 
-  def reset!
-    #reset the state of the cells on the board 
+  def reset! #reset the state of the cells on the board 
     @cells = [" ", " ", " ", " ", " ", " ", " ", " ", " "]
   end
 
