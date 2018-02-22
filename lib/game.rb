@@ -82,7 +82,7 @@ class Game
     end
   end
 
-  def start
+  def start #sets up the game based on user input and then starts the game with play
     puts "What kind of game would you like to play? 0,1, or 2 player game."
     kind = gets.strip.to_i
     if kind == 0
