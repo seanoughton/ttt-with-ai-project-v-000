@@ -19,6 +19,9 @@ module Players
         array_of_empty_cells
       end
 
+      def defense
+      end
+
       def take_corners_strategy #take these positions: 1,3,9 : 3,7,9: 1,7,9: 1,3,7
         #part of this strategy needs to involve defense moves as well
         #need a blocking method that takes into account where each player has played
