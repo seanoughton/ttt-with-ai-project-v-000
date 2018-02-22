@@ -43,10 +43,7 @@ class Board
     full_positions.size
   end
 
-  def taken?(input)
-    #will return true or false for an individual position.
-    #test to see if that position in the array is taken
-    #if there is something at this position, then return true
+  def taken?(input)#return true if an individual position on the board is occupied
     if position(input) == " " #if what is ast the position does not equal " ", then true
       false
     else
