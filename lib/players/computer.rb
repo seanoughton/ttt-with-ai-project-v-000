@@ -48,6 +48,7 @@ module Players
         empty_cell
       end
 
+      #test if a defensive move (a block) is needed
       def block #return the cell that needs to be blocked if there is one
         block_cell = " "
         win_combos = [[0,1,2],[3,4,5],[6,7,8],[0,3,6],[1,4,7],[2,5,8],[0,4,8],[6,4,2]]
@@ -84,28 +85,6 @@ module Players
         end
 
       end
-
-=begin
-      def take_corners_strategy #take these positions: 1,3,9 : 3,7,9: 1,7,9: 1,3,7
-
-        empty_cells
-        #find the first of these numbers that is not in empty_cells and return that element
-        next_move = empty_cells.select do |element|
-          element == "1" || element == "3"|| element == "7" || element == "9"
-        end
-        #return the next move
-        if next_move == [] && @the_board.cells[4] == " "
-          #if the strategy cells are full and the middle is empty play the middle
-          next_move = "5"
-        elsif next_move.size > 0
-          #if next move is got stuff in the array, play the first element of the array
-          next_move[0]
-        else
-          #if you can't play the strategy moves or the middle, play the first empty cells
-          next_move = empty_cells[0]
-        end
-      end
-=end
       take_corners_strategy
 
     end #move end
