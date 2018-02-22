@@ -49,7 +49,7 @@ module Players
         end
       end
       array_of_empty_cells[0]
-      empty_cells
+      #empty_cells
 
     end #move end
   end #class end
