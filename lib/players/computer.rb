@@ -32,7 +32,7 @@ module Players
 
       def take_corners_strategy #take these positions: 1,3,9 : 3,7,9: 1,7,9: 1,3,7
 
-        defense
+        #defense
         empty_cells
         #find the first of these numbers that is not in empty_cells and return that element
         next_move = empty_cells.select do |element|
