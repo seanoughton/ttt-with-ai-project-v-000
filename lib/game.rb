@@ -83,7 +83,6 @@ class Game
   end
 
   def start
-
     puts "What kind of game would you like to play? 0,1, or 2 player game."
     kind = gets.strip.to_i
     if kind == 0
