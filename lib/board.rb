@@ -7,7 +7,7 @@ class Board
   end
 
   def reset!
-    #can reset the state of the cells to what a board should look like at the start of a game, an array with 9 " " elements.
+    #reset the state of the cells on the board 
     @cells = [" ", " ", " ", " ", " ", " ", " ", " ", " "]
   end
 
