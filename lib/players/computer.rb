@@ -30,8 +30,8 @@ module Players
         set_1 = ["1","3","9"]
         empty_cells
         #if 1,3,9 is in the empty_cells then play each one of these numbers successively
-        set_1.each do |element|
-        end
+        #check to see if empty_cells contains any of these numbers
+
 
       end
 
