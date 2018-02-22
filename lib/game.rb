@@ -20,10 +20,7 @@ class Game
     @board = board
   end
 
-  def current_player
-    #returns the current player, the player who should make the next move
-    #logic: looks at the X's and O's on the board
-    #returns whoever the current_player should be, the player instance who's next turn it is
+  def current_player #returns the current player, the player who should make the next move
     num_of_x = self.board.cells.find_all do |position|
       position == "X"
     end
