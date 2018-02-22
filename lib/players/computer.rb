@@ -37,11 +37,11 @@ module Players
       def test_the_array(array)
         empty_cell = " "
         test_array = array.collect do |element|
-          @cells[element]
+          @the_board.cells[element]
         end
-        if test_array.count(opponent) > 1 
+        if test_array.count(opponent) > 1
           array.each do |element|
-            if @cells[element] == " "
+            if @the_board.cells[element] == " "
               empty_cell = (element+1).to_s
             end
           end
